@@ -1,0 +1,9 @@
+{
+  "cSpell.words": [
+    "stepn"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+}
