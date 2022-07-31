@@ -1,4 +1,4 @@
-const { createHmac } = require('crypto');
+const { createHash } = require('crypto');
 
 const { Rng } = require('./rand');
 const { strToU8Arr, I32_MAX } = require('./utils');
@@ -63,7 +63,7 @@ module.exports.encodeWithSeed = (data, seed) => {
 module.exports.hashPassword = (email, password, now = Date.now()) => {
   const SALT = 'helloSTEPN';
 
-  const hash = createHmac('sha256', password).update(SALT).digest('hex');
+  const hash = createHash('sha256').update(password).update(SALT).digest('hex');
   const data = strToU8Arr(`${hash}_${now}`);
 
   const emailHash = this.hashCode(email);

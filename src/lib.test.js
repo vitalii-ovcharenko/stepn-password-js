@@ -16,11 +16,11 @@ describe('lib', () => {
     );
   });
 
-  it('has_password', () => {
-    const hashed = hashPassword('yakof12530@satedly.com', '123456', 1659215924751);
+  it('hash_password', () => {
+    const hashed = hashPassword('yakof12530@satedly.com', '123456', 1659250749770);
 
     expect(hashed).toEqual(
-      'sKbFBodlBRAF3IAlkK7QVEAh2VAQu8AFvPxhWE7lvR7QkI5QurbhTIdF2SmlTPWFvPbPvh5lNI7FBH5P8m5QvrAP8F7QbqbFxh7FkHdF',
+      'XUvh3hxh3H7lWD5FBP5QVE7l68bPVQvPvHxQTIvhuRbPbUvQNPdQToWFuLBh3o7PbQbPkhvQVD7QsPWhsobhNRAQXXAlxKAPWF7PuRdQ',
     );
   });
 });
